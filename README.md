@@ -18,22 +18,22 @@ This repository contains the source code (based on <b>TensorFlow 2.1.0, Python 3
    - imgaug 0.2.9 or above
    - tqdm   
 3) Download the desired dataset:
-   - Zhang [URL]()
-   - Duke-1 [URL]()
-   - Duke-2 [URL]()
-   - Duke-3 [URL]()
-   - Rabbani [URL]()
-   - BIOMISA [URL]()
-   - AFIO [URL]()
+   - Zhang [URL](https://www.kaggle.com/datasets/paultimothymooney/kermany2018)
+   - Duke-1 [URL](https://people.duke.edu/~sf59/RPEDC_Ophth_2013_dataset.htm)
+   - Duke-2 [URL](https://people.duke.edu/~sf59/Chiu_BOE_2014_dataset.htm)
+   - Duke-3 [URL](https://people.duke.edu/~sf59/Srinivasan_BOE_2014_dataset.htm)
+   - Rabbani [URL](https://sites.google.com/site/hosseinrabbanikhorasgani/datasets-1)
+   - BIOMISA [URL](https://data.mendeley.com/datasets/trghs22fpg/4)
+   - AFIO [URL](https://data.mendeley.com/datasets/2rnnz5nz74/2)
    
 4) Create the two folders named as 'trainingDataset' and 'testingDataset'.
-5) Put training images of the desired dataset in '…\trainingDataset\trainImages_K' folder where 'K' represents the iteration or model instance.
-6) Put training annotation in '…\trainingDataset\trainGT_K' folder.
-7) Put validation images in '…\trainingDataset\valImages_K' folder.
-8) Put validation annotations in '…\trainingDataset\valGT_K' folder.
+5) Put training images of the desired dataset in '…\trainingDataset\trainImages_N' folder where 'N' represents the dataset number.
+6) Put training annotation in '…\trainingDataset\trainGT_N' folder.
+7) Put validation images in '…\trainingDataset\valImages_N' folder.
+8) Put validation annotations in '…\trainingDataset\valGT_N' folder.
 9) Put test images in '…\testingDataset\test_images' folder and their annotations in '…\testingDataset\test_annotations' folder.
     - Note: the images and annotations should have same name and extension (preferably png).
-10) Apart from this, the 'segmentation_resultsK' folder in 'testingDataset' will contains the segmented results.
+10) Apart from this, the 'segmentation_resultsN' folder in 'testingDataset' will contains the segmented results.
 11) Provide training configurations in ‘config.py’ file.
 
 </p>
@@ -41,8 +41,8 @@ This repository contains the source code (based on <b>TensorFlow 2.1.0, Python 3
 ## Steps
 <p align="justify">
    
-1) Use 'trainer.py' to incrementally train the segmentation network. The following script will also save the model instances in the h5 file.
-2) Use 'tester.py' file to extract segmentation results for each model (the model results will be saved in 'segmentation_resultsK' folder.
+1) Use 'trainer.py' to train the proposed pipeline. The following script will also save the models in the h5 files.
+2) Use 'tester.py' file to extract the retinal lesions to grade retinopathy.
 3) We have also provided some converter scripts to port TF keras models into MATLAB etc.
 
 </p>
