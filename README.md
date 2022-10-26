@@ -1,6 +1,6 @@
 # Angular Contrastive Distillation Driven Self-Supervised Scanner Independent Screening and Grading of Retinopathy
 <p align="justify">
-This repository contains the source code (based on <b>TensorFlow 2.1.0, Python 3.7.9</b>) for the manuscript titled "Angular Contrastive Distillation Driven Self-Supervised Scanner Independent Screening and Grading of Retinopathy", Submitted in <b>Information Fusion</b>
+This repository contains the source code (based on <b>TensorFlow 2.1.0, Python 3.7.9</b>) for the manuscript titled <b>"Angular Contrastive Distillation Driven Self-Supervised Scanner Independent Screening and Grading of Retinopathy"</b>, Submitted in <b>Information Fusion</b>
 </p>
 
 ![BD](/images/block_diagram2.jpg) 
