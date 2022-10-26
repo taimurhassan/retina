@@ -17,7 +17,7 @@ This repository contains the source code (based on <b>TensorFlow 2.1.0, Python 3
    - OpenCV 4.2 or above
    - imgaug 0.2.9 or above
    - tqdm   
-3) Download the desired dataset:
+3) Download the datasets from the following URLs:
    - Zhang [URL](https://www.kaggle.com/datasets/paultimothymooney/kermany2018)
    - Duke-1 [URL](https://people.duke.edu/~sf59/RPEDC_Ophth_2013_dataset.htm)
    - Duke-2 [URL](https://people.duke.edu/~sf59/Chiu_BOE_2014_dataset.htm)
@@ -27,7 +27,7 @@ This repository contains the source code (based on <b>TensorFlow 2.1.0, Python 3
    - AFIO [URL](https://data.mendeley.com/datasets/2rnnz5nz74/2)
    
 4) Create the two folders named as 'trainingDataset' and 'testingDataset'.
-5) Put training images of the desired dataset in '…\trainingDataset\trainImages_N' folder where 'N' represents the dataset number.
+5) Put training images of each dataset in '…\trainingDataset\trainImages_N' folder where 'N' represents the dataset number.
 6) Put training annotation in '…\trainingDataset\trainGT_N' folder.
 7) Put validation images in '…\trainingDataset\valImages_N' folder.
 8) Put validation annotations in '…\trainingDataset\valGT_N' folder.
